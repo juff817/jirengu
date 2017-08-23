@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style type="text/css">
+*{margin: 0;padding: 0;}
+.laotou{
+	width: 100px;
+	height: 100px;
+	margin-top: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	z-index: 0;
+}
+.ding{
+	position: absolute;
+	top: 25px;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 32px;
+}
+.o{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border: 2px solid #000;
+	border-radius: 50%;
+	position: absolute;
+	top: 43px;
+}
+.o1{
+	right: 50%;
+    transform: translateX(-5px);	
+}
+.o2{
+	left: 50%;
+	transform: translateX(5px);
+}
+.san{
+	position: absolute;
+	top: 13px;
+	left: 50%;
+	transform: translateX(-50%) scaleX(2);
+	font-weight: bold;
+}
+.si{
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%) scaleX(2);
+	font-family: 
+}
+.egg{
+	position: absolute;
+	width: 96px;
+	height: 96px;
+	border: 2px solid #000;
+	border-radius: 50%;
+	transform: scaleX(0.85);
+	z-index: 0;
+	background: #fff;
+}
+.hair{
+	position: absolute;
+	bottom: 100%;
+	left: 50%;
+	transform: translateX(-50%) scaleX(3);
+	line-height: 1;
+}
+.ear{
+	position: absolute;
+	top: 35px;
+	font-size: 20px;
+}
+.e1{
+	right: 100%;
+	margin-right: -10px;
+    transform: rotateY(180deg);
+}
+.e2{
+	left: 100%;
+	margin-left: -10px;
+}
+.body{
+	position: absolute;
+	top: calc(100% - 20px);
+	width: 60px;
+	height: 80px;
+	border: 2px solid #000;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: -1;
+}
+.hand{
+	position: absolute;
+	font-size: 30px;
+	font-family: "monofur";
+	top: 95px;
+}
+.hand1{
+	right: 50%;
+	margin-right: 31px;
+	transform: rotateZ(20deg);
+}
+.hand2{
+	left: 50%;
+	margin-left: 31px;
+	transform: rotateY(180deg) rotateZ(20deg);
+}
+ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.five{
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.five li{
+	width: 8px;
+	height: 8px;
+	border: 2px solid #000;
+	border-radius: 50%;
+}
+.foot{
+	position: absolute;
+	top: 155px;
+	font-size: 32px;
+}
+.foot1{
+	right: 50%;
+	margin-right: 10px;
+	transform: rotateX(180deg);
+}
+.foot2{
+	left: 50%;
+	margin-left: 10px; 
+	transform: rotateX(180deg) rotateY(180deg);
+}
+</style>
+<body>
+  <div class="laotou">
+  	<span class="egg"></span>
+	<span class="ding">丁</span>
+	<span class="o o1"></span>
+	<span class="o o2"></span>
+	<span class="san">三</span>
+	<span class="si">四</span>
+	<span class="hair">|||</span>
+	<div class="ear e1">3</div>
+	<div class="ear e2">3</div>
+	<div class="body"></div>
+	<div class="hand hand1">6</div>
+	<div class="hand hand2">6</div>
+	<ul class="five">
+       <li></li>
+       <li></li>
+       <li></li>
+       <li></li>
+       <li></li>
+	</ul>
+	<div class="foot foot1">7</div>
+	<div class="foot foot2">7</div>
+  </div>	
+</body>
+</html>
