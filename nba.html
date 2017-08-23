@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<style type="text/css">
+  *{margin: 0px;padding: 0px;box-sizing: border-box;}
+ul,li{list-style: none;}
+a{text-decoration: none;}
+.box{
+  max-width: 720px;
+  margin: 0 auto;
+}
+.header{
+  text-align: center;
+}
+.header .avatar{
+  max-width: 200px;
+  max-height: 100px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.header .tags > a{
+  display: inline-block;
+  background: #ddd;
+  margin: 0 1em;
+  padding: 0.3em 0.4em;
+  color: #000;
+}
+@media (max-width: 425px) {
+  .header .tags > a{
+    padding-left: 1.6em;
+    padding-right: 1.6em;
+    margin-top: 4px;
+  }
+
+}
+.news{
+  background: #005896;
+  text-align: center;
+  padding-top: 8px;
+  margin-top: 16px;
+  padding-bottom: 8px;
+}
+.news h2{
+  margin-top: 16px;
+  margin-bottom: 16px;
+  color: #FFF002;
+}
+.news .status-2{
+  display: none;
+}
+.news .status-2 span{
+  display: inline-block;
+  min-width: 10em;
+  margin-top: 4px;
+}
+@media (max-width: 425px) {
+  .news .status-1{
+    display: none;
+  }
+  .news .status-2{
+    display: block;
+  }
+}
+.news p{
+  margin: 16px 0;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #fff;
+}
+.album{
+  text-align: center;
+  margin-top: 16px;
+}
+.album img{
+  max-width: 100%;
+  max-height: 160px;
+}
+.album ul{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 720px;
+  margin: 0 auto;
+}
+@media (max-width: 720px) {
+  .album ul{
+    justify-content: center;
+  }
+}
+.album h2{
+  color: #000;
+  background: #ddd;
+}
+
+.album ul > li{
+  max-width: 160px;
+  margin: 16px 10px;
+}
+.album h3{
+  color: #393939;
+}
+.album p{
+  color: #626262;
+}
+</style>
+</style>
+<body>
+    <div class="box">
+        <div class="header">
+            <a target="_blank" href="http://china.nba.com/"><img class="avatar" src="http://static.ttpp.com/brandlogo/0-3249277.jpg"></a>
+            <div class="tags">
+                <a target="_blank" href="http://sports.sina.com.cn/nba/"><span>新浪NBA</span></a>
+                <a target="_blank" href="https://nba.hupu.com/"><span>虎扑NBA</span></a>
+                <a target="_blank" href="http://sports.qq.com/nba/"><span>腾讯NBA</span></a>
+                <a target="_blank" href="http://sports.sohu.com/nba.shtml"><span>搜狐NBA</span></a>
+            </div>
+        </div>
+        <div class="news">
+            <h2 class="status-1">
+              <span>聚焦NBA2016-17赛季季后赛</span>
+            </h2>
+            <h2 class="status-2">
+              <span>聚焦NBA2016-17赛季</span>
+              <span>季后赛</span>
+            </h2>
+            <a target="_blank" href="http://sports.qq.com/a/20170515/002223.htm"><p><span>勇士逆转25分擒马刺总比分1-0</span></p></a>
+            <a target="_blank" href="http://sports.qq.com/a/20170515/019909.htm"><p><span>奇才vs绿军&nbsp谁能进东决会师骑士</span></p></a>
+        </div>
+        <div class="album">
+           <a target="_blank" href="http://nba.stats.qq.com/team/list.htm"><h2>NBA球队</h2></a>
+           <ul>
+              <li>
+                 <a target="_blank" href="http://nba.stats.qq.com/team/?id=2">
+                 <img src="http://mat1.gtimg.com/sports/nba/logo/1602/2.png">
+                 <h3>波士顿&nbsp凯尔特人</h3>
+                 <p>Boston&nbspCeltics</p>
+                 </a>
+              </li>
+              <li>
+                 <a target="_blank" href="http://nba.stats.qq.com/team/?id=5">
+                 <img src="http://mat1.gtimg.com/sports/nba/logo/1602/5.png">
+                 <h3>克利夫兰&nbsp骑士</h3>
+                 <p>Cleveland&nbspCavaliers</p>
+                 </a>
+              </li>
+              <li>
+                 <a target="_blank" href="http://nba.stats.qq.com/team/?id=9">
+                 <img src="http://mat1.gtimg.com/sports/nba/logo/1602/901.png">
+                 <h3>金州&nbsp勇士</h3>
+                 <p>Golden&nbspState&nbspWarriors</p>
+                 </a>
+              </li>
+              <li>
+                 <a target="_blank" href="http://nba.stats.qq.com/team/?id=24">
+                 <img src="http://mat1.gtimg.com/sports/nba/logo/1602/24.png">
+                 <h3>圣安东尼奥&nbsp马刺</h3>
+                 <p>San&nbspAntonio&nbspSpurs</p>
+                 </a>
+              </li>
+              <li>
+                 <a target="_blank" href="http://nba.stats.qq.com/team/?id=27">
+                 <img src="http://mat1.gtimg.com/sports/nba/logo/1602/27.png">
+                 <h3>华盛顿&nbsp奇才</h3>
+                 <p>Washington&nbspWizards</p>
+                 </a>
+              </li>
+              <li>
+                 <a target="_blank" href="http://nba.stats.qq.com/team/?id=28">
+                 <img src="http://mat1.gtimg.com/sports/nba/logo/1602/28.png">
+                 <h3>多伦多&nbsp猛龙</h3>
+                 <p>Toronto&nbspRaptors</p>
+                 </a>
+              </li>
+              <li>
+                 <a target="_blank" href="http://nba.stats.qq.com/team/?id=26">
+                 <img src="http://mat1.gtimg.com/sports/nba/logo/1602/26.png">
+                 <h3>犹他&nbsp爵士</h3>
+                 <p>Utah&nbspJazz</p>
+                 </a>
+              </li>
+              <li>
+                 <a target="_blank" href="http://nba.stats.qq.com/team/?id=10">
+                 <img src="http://mat1.gtimg.com/sports/nba/logo/1602/10.png">
+                 <h3>休斯敦&nbsp火箭</h3>
+                 <p>Houston&nbspRockets</p>
+                 </a>
+              </li>
+              <li>
+                 <a target="_blank" href="http://nba.stats.qq.com/team/?id=15">
+                 <img src="http://mat1.gtimg.com/sports/nba/logo/1602/15.png">
+                 <h3>密尔沃基&nbsp雄鹿</h3>
+                 <p>Milwaukee&nbspBucks</p>
+                 </a>
+              </li>
+              <li>
+                 <a target="_blank" href="http://nba.stats.qq.com/team/?id=1">
+                 <img src="http://mat1.gtimg.com/sports/nba/logo/1602/1.png">
+                 <h3>亚特兰大&nbsp老鹰</h3>
+                 <p>Atlanta&nbspHawks</p>
+                 </a>
+              </li>
+              <li>
+                 <a target="_blank" href="http://nba.stats.qq.com/team/?id=12">
+                 <img src="http://mat1.gtimg.com/sports/nba/logo/1602/1201.png">
+                 <h3>洛杉矶&nbsp快船</h3>
+                 <p>LA&nbspClippers</p>
+                 </a>
+              </li>
+              <li>
+                 <a target="_blank" href="http://nba.stats.qq.com/team/?id=25">
+                 <img src="http://mat1.gtimg.com/sports/nba/logo/1602/25.png">
+                 <h3>俄克拉荷马&nbsp雷霆</h3>
+                 <p>Oklahoma&nbspCity&nbspThunder</p>
+                 </a>
+              </li>
+              <li>
+                 <a target="_blank" href="http://nba.stats.qq.com/team/?id=11">
+                 <img src="http://mat1.gtimg.com/sports/nba/logo/1602/11.png">
+                 <h3>印第安纳&nbsp步行者</h3>
+                 <p>Indiana&nbspPacers</p>
+                 </a>
+              </li>
+              <li>
+                 <a target="_blank" href="http://nba.stats.qq.com/team/?id=4">
+                 <img src="http://mat1.gtimg.com/sports/nba/logo/1602/4.png">
+                 <h3>芝加哥&nbsp公牛</h3>
+                 <p>Chicago&nbspBulls</p>
+                 </a>
+              </li>
+              <li>
+                 <a target="_blank" href="http://nba.stats.qq.com/team/?id=22">
+                 <img src="http://mat1.gtimg.com/sports/nba/logo/1602/22.png">
+                 <h3>波特兰&nbsp开拓者</h3>
+                 <p>Portland&nbspTrail&nbspBlazers</p>
+                 </a>
+              </li>
+              <li>
+                 <a target="_blank" href="http://nba.stats.qq.com/team/?id=29">
+                 <img src="http://mat1.gtimg.com/sports/nba/logo/1602/29.png">
+                 <h3>孟菲斯&nbsp灰熊</h3>
+                 <p>Memphis&nbspGrizzlies</p>
+                 </a>
+              </li>
+              <li>
+                 <a target="_blank" href="http://nba.stats.qq.com/team/?id=14">
+                 <img src="http://mat1.gtimg.com/sports/nba/logo/1602/14.png">
+                 <h3>迈阿密&nbsp热火</h3>
+                 <p>Miami&nbspHeat</p>
+                 </a>
+              </li>
+              <li>
+                 <a target="_blank" href="http://nba.stats.qq.com/team/?id=18">
+                 <img src="http://mat1.gtimg.com/sports/nba/logo/1602/18.png">
+                 <h3>纽约&nbsp尼克斯</h3>
+                 <p>New&nbspYork&nbspKnicks</p>
+                 </a>
+              </li>
+              <li>
+                 <a target="_blank" href="http://nba.stats.qq.com/team/?id=23">
+                 <img src="http://mat1.gtimg.com/sports/nba/logo/1602/23.png">
+                 <h3>萨克拉门托&nbsp国王</h3>
+                 <p>Sacramento&nbspKings</p>
+                 </a>
+              </li>
+              <li>
+                 <a target="_blank" href="http://nba.stats.qq.com/team/?id=7">
+                 <img src="http://mat1.gtimg.com/sports/nba/logo/1602/7.png">
+                 <h3>丹佛&nbsp掘金</h3>
+                 <p>Denver&nbspNuggets</p>
+                 </a>
+              </li>
+              <li>
+                 <a target="_blank" href="http://nba.stats.qq.com/team/?id=19">
+                 <img src="http://mat1.gtimg.com/sports/nba/logo/1602/19.png">
+                 <h3>奥兰多&nbsp魔术</h3>
+                 <p>Orlando&nbspMagic</p>
+                 </a>
+              </li>
+              <li>
+                 <a target="_blank" href="http://nba.stats.qq.com/team/?id=8">
+                 <img src="http://mat1.gtimg.com/sports/nba/logo/1602/8.png">
+                 <h3>底特律&nbsp活塞</h3>
+                 <p>Detroit&nbspPistons</p>
+                 </a>
+              </li>
+              <li>
+                 <a target="_blank" href="http://nba.stats.qq.com/team/?id=6">
+                 <img src="http://mat1.gtimg.com/sports/nba/logo/1602/6.png">
+                 <h3>达拉斯&nbsp小牛</h3>
+                 <p>Dallas&nbspMavericks</p>
+                 </a>
+              </li>
+              <li>
+                 <a target="_blank" href="http://nba.stats.qq.com/team/?id=3">
+                 <img src="http://mat1.gtimg.com/sports/nba/logo/1602/3.png">
+                 <h3>新奥尔良&nbsp鹈鹕</h3>
+                 <p>New&nbspOrleans&nbspPelicans</p>
+                 </a>
+              </li>
+              <li>
+                 <a target="_blank" href="http://nba.stats.qq.com/team/?id=20">
+                 <img src="http://mat1.gtimg.com/sports/nba/logo/1602/20.png">
+                 <h3>费城&nbsp76人</h3>
+                 <p>Philadelphia&nbsp76ers</p>
+                 </a>
+              </li>
+              <li>
+                 <a target="_blank" href="http://nba.stats.qq.com/team/?id=17">
+                 <img src="http://mat1.gtimg.com/sports/nba/logo/1602/17.png">
+                 <h3>布鲁克林&nbsp篮网</h3>
+                 <p>Brooklyn&nbspNets</p>
+                 </a>
+              </li>
+              <li>
+                 <a target="_blank" href="http://nba.stats.qq.com/team/?id=13">
+                 <img src="http://mat1.gtimg.com/sports/nba/logo/1602/13.png">
+                 <h3>洛杉矶&nbsp湖人</h3>
+                 <p>Los&nbspAngeles&nbspLakers</p>
+                 </a>
+              </li>
+              <li>
+                 <a target="_blank" href="http://nba.stats.qq.com/team/?id=16">
+                 <img src="http://mat1.gtimg.com/sports/nba/logo/1602/16.png">
+                 <h3>明尼苏达&nbsp森林狼</h3>
+                 <p>Minnesota&nbspTimberwolves</p>
+                 </a>
+              </li>
+              <li>
+                 <a target="_blank" href="http://nba.stats.qq.com/team/?id=21">
+                 <img src="http://mat1.gtimg.com/sports/nba/logo/1602/21.png">
+                 <h3>菲尼克斯&nbsp太阳</h3>
+                 <p>Phoenix&nbspSuns</p>
+                 </a>
+              </li>
+              <li>
+                 <a target="_blank" href="http://nba.stats.qq.com/team/?id=5312">
+                 <img src="http://www2.flightclub.cn/news/uploads/allimg/131224/1-131224094308.jpg">
+                 <h3>夏洛特&nbsp黄蜂</h3>
+                 <p>Charlotte&nbspHornets</p>
+                 </a>
+              </li>
+           </ul>
+        </div>
+    </div>
+</body>
+</html>
