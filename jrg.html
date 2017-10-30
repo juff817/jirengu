@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>饥人谷</title>
+	<style type="text/css">
+               *{
+                     margin:0px;
+               	     padding:0px;
+                   
+               }
+               ul li{list-style: none;}
+               .header-box{
+                border-bottom: 1px #cccccc solid;
+               }
+               .header{
+               	width:1190px;
+               	height: 75px;
+                margin:0 auto;   	
+               }                            
+               .header .logo{
+               	float: left;
+               	width: 63px;
+               	height: 63px;
+               }
+               .header .logo img{
+                width: 57px;
+                height: 45px;
+                margin-top: 11px;
+               }
+               .header .caidan{
+                width: 600px;
+                height: 70px;
+                float: left;
+                margin-left:40px;
+               }
+               .header .caidan ul li{
+                list-style: none;
+                float: left;
+                margin-right:48px;
+               }
+               .header .caidan a{
+                font-family:"微软雅黑";
+                text-decoration: none;
+                font-weight: bold;
+                font-size:14px;
+                color:#333;
+                display:block;
+                line-height:15px;
+                padding-top:28px;
+                float:left;
+               }
+               .header .caidan a:hover{
+                border-bottom: 3px #333 solid;
+                padding-bottom: 5px;
+               }
+               .header .yonghu{
+                float: right;
+               }
+               .header .yonghu a{
+                text-decoration: none;
+               }
+               .header .yonghu .denglu{ 
+                font-size: 14px;
+                font-family: "微软雅黑";
+                float: right;
+                font-weight:bold;
+                margin-top: 25px;
+                margin-left: 10px;
+                color: #333;
+               }
+               .header .yonghu img{
+                float: right;
+                margin-top: 15px;
+               }
+               .mid{
+               	width: 1190px;
+                margin: 10px auto;
+               	overflow: hidden;
+               }
+               .mid .left{
+               	width: 260px;
+               	float: left;
+               }
+               .mid .left ul{
+                margin-top: 20px;
+               }                  
+               .mid .left .title{
+                width: 260px;
+                height: 43px;
+                background: rgb(232,78,65);
+               }
+               .mid .left .title a{
+                font-size: 15px;
+                float: left;
+                text-decoration: none;
+                color: #fff;
+                font-weight: bold;
+                font-family: "微软雅黑";
+                margin-top: 12px;
+                margin-left: 14px;
+               }
+               .mid .left .meun{
+                width: 258px;
+                height: 41px;
+                border: 1px #cccccc solid;
+                border-top: none;
+               }
+               .mid .left .meun a{
+                font-size: 15px;
+                float: left;
+                text-decoration: none;
+                color:#666;
+                font-family: "微软雅黑";
+                font-weight: 100;
+                padding-top:10px;
+                padding-left: 14px; 
+               }
+
+               .mid .left .meun:hover{
+                width: 258px;
+                height: 41px;
+                background:#cccccc;
+                color: black;
+               }
+               .mid .left .huise{
+                width: 258px;
+                height: 41px;
+                background:#cccccc;
+                color: black
+               }
+               .mid .right{
+               	width: 902px;
+               	float: right;
+                margin-top: 20px;
+               }
+               .mid .right .me{
+                width: 902px;
+                height: 42px;
+                border-bottom: 1px #cccccc solid;
+               }
+               .mid .right .me ul li{
+                list-style: none;
+               }
+               .mid .right .me a{
+                font-family: "微软雅黑";
+                font-size: 15px;
+                text-decoration: none;
+                color: #666;
+                font-weight:100;
+               }
+               .mid .right .me .goumai{
+                width: 105px;
+                height: 42px;
+                line-height: 42px;
+                float: left;
+                margin-left: 16px;
+                border: 1px #cccccc solid;
+                border-bottom: none;
+                padding-left: 17px;
+               }
+               .mid .right .me .shoucang{
+                width: 105px;
+                height: 42px;
+                line-height: 42px;
+                float: left;
+                margin-left: 35px;
+                padding-left: 17px;
+               }
+               .mid .right .me .shoucang:hover{
+                background: #cccccc;
+               }
+               .mid .right .me .guanli{
+                font-size: 15px;
+                font-family: "微软雅黑";
+                float: right;
+                font-weight:100;
+                margin-top: 10px;
+               }
+               .mid .right .me img{
+                float: right;
+                margin-top: 10px;
+               }
+               .mid .right .kecheng{
+                width: 902px;
+                margin:50px auto;
+                overflow: hidden;
+               }
+               .mid .right .kecheng .course{ 
+                width: 235px;
+                height: 247px;
+                float: left;
+                margin: 15px 30px; 
+                border:#ffffff 1px solid;
+                box-shadow:0 2px 5px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.02);
+                transition: box-shadow 0.3s;
+               }
+               .mid .right .kecheng .course img{
+                width: 236px;
+                height: 130px;
+               }
+               .mid .right .kecheng .course:hover{
+                width:235px;
+                height:247px;
+                border:#fff 1px solid;
+                box-shadow:2px 2px 10px #909090;
+               }
+               .mid .right .kecheng .course a{
+                text-decoration: none;
+               }
+               .mid .right .kecheng .course h5{
+                width: 35;
+                height: 235;
+                margin:18px 10px 0;
+               }
+               .mid .right .kecheng .course h5 a{
+                text-align: left;
+                line-height: 1.2em;
+                font-family:sans-serif;
+                color: #666;
+                font-weight: bold;
+                font-size: 14px;
+                }
+                .mid .right .kecheng .course h5 a:hover{
+                color: black;
+                }
+               .mid .right .kecheng .course p{
+                font-family: "微软雅黑";
+                text-indent: 0;
+                font-size: 12px;
+                color: #777;
+                margin:4px 10px 0;
+               }
+               .mid .right .kecheng .course span{
+                font-family: "微软雅黑";
+                text-indent: 0;
+                font-size: 12px;
+                color: #777;
+                margin:4px 10px 0;
+               } 
+	</style>
+</head>
+<body>
+<div class="header-box">
+               <div class="header">
+                     <div class="logo">
+                     	<img src="images/logo.png">
+                     </div>
+                     <div class="caidan">
+			             <ul>
+                                 <li><a href="">视频</a></li>
+                                 <li><a href="">导师</a></li>
+                                 <li><a href="">课件</a></li>
+                                 <li><a href="">社区</a></li>
+                                 <li><a href="">作品</a></li>
+                                 <li><a href="">博客</a></li>
+                                 <li><a href="">报名</a></li>
+                             </ul>
+                     </div>
+                     <div class="yonghu">
+				<a href="" class="denglu">登录</a><img src="images\tou.jpg">
+                     </div>
+               </div>
+</div>
+               <div class="mid">
+                     <div class="left">
+                     <ul>
+                          <li class="title"><a href="">内容管理</a></li>
+                          <li class="meun huise"><a href="">视频</a></li>
+                          <li class="meun"><a href="">课程</a></li>
+                     </ul>
+                     <ul>
+                          <li class="title"><a href="">财富管理</a></li>
+                          <li class="meun"><a href="">充值</a></li>
+                          <li class="meun"><a href="">余额</a></li>
+                     </ul>
+                     <ul>
+                          <li class="title"><a href="">账户管理</a></li>
+                          <li class="meun"><a href="">设置</a></li>
+                     </ul>
+                     </div>
+                     <div class="right">
+                         <div class="me">
+                            <ul>
+                                <li class="goumai"><a href="">我购买的视频</a></li> 
+                                <li class="shoucang"><a href="">我收藏的视频</a></li>
+                            </ul>
+                            <a href="" class="guanli">管理</a><img src="images\guan.jpg">
+                         </div>
+                         <div class="kecheng">
+                              <ul>
+                                   <li class="course">
+                                   <a href=""><img width="240" height="130" src="images\lesson.jpg"></a>
+                                      <h5>
+                                           <a href="">1.HTML基础一[JUFF]</a>
+                                      </h5>
+                                   <p>饥人谷前端交流群</p>
+                                   <span>25人购买</span>
+                                   </li>
+                                   <li class="course">
+                                   <a href=""><img width="240" height="130" src="images\lesson.jpg"></a>
+                                      <h5>
+                                           <a href="">1.HTML基础一[JUFF]</a>
+                                      </h5>
+                                   <p>饥人谷前端交流群</p>
+                                   <span>25人购买</span>
+                                   </li>
+                                   <li class="course">
+                                   <a href=""><img width="240" height="130" src="images\lesson.jpg"></a>
+                                      <h5>
+                                           <a href="">1.HTML基础一[JUFF]</a>
+                                      </h5>
+                                   <p>饥人谷前端交流群</p>
+                                   <span>25人购买</span>
+                                   </li>
+                                   <li class="course">
+                                   <a href=""><img width="240" height="130" src="images\lesson.jpg"></a>
+                                      <h5>
+                                           <a href="">1.HTML基础一[JUFF]</a>
+                                      </h5>
+                                   <p>饥人谷前端交流群</p>
+                                   <span>25人购买</span>
+                                   </li>
+                                   <li class="course">
+                                   <a href=""><img width="240" height="130" src="images\lesson.jpg"></a>
+                                      <h5>
+                                           <a href="">1.HTML基础一[JUFF]</a>
+                                      </h5>
+                                   <p>饥人谷前端交流群</p>
+                                   <span>25人购买</span>
+                                   </li>
+                                   <li class="course">
+                                   <a href=""><img width="240" height="130" src="images\lesson.jpg"></a>
+                                      <h5>
+                                           <a href="">1.HTML基础一[JUFF]</a>
+                                      </h5>
+                                   <p>饥人谷前端交流群</p>
+                                   <span>25人购买</span>
+                                   </li>
+                                   <li class="course">
+                                   <a href=""><img width="240" height="130" src="images\lesson.jpg"></a>
+                                      <h5>
+                                           <a href="">1.HTML基础一[JUFF]</a>
+                                      </h5>
+                                   <p>饥人谷前端交流群</p>
+                                   <span>25人购买</span>
+                                   </li>
+                                   <li class="course">
+                                   <a href=""><img width="240" height="130" src="images\lesson.jpg"></a>
+                                      <h5>
+                                           <a href="">1.HTML基础一[JUFF]</a>
+                                      </h5>
+                                   <p>饥人谷前端交流群</p>
+                                   <span>25人购买</span>
+                                   </li>
+                                   <li class="course">
+                                   <a href=""><img width="240" height="130" src="images\lesson.jpg"></a>
+                                      <h5>
+                                           <a href="">1.HTML基础一[JUFF]</a>
+                                      </h5>
+                                   <p>饥人谷前端交流群</p>
+                                   <span>25人购买</span>
+                                   </li>
+                                   <li class="course">
+                                   <a href=""><img width="240" height="130" src="images\lesson.jpg"></a>
+                                      <h5>
+                                           <a href="">1.HTML基础一[JUFF]</a>
+                                      </h5>
+                                   <p>饥人谷前端交流群</p>
+                                   <span>25人购买</span>
+                                   </li>
+                                   <li class="course">
+                                   <a href=""><img width="240" height="130" src="images\lesson.jpg"></a>
+                                      <h5>
+                                           <a href="">1.HTML基础一[JUFF]</a>
+                                      </h5>
+                                   <p>饥人谷前端交流群</p>
+                                   <span>25人购买</span>
+                                   </li>
+                                   <li class="course">
+                                   <a href=""><img width="240" height="130" src="images\lesson.jpg"></a>
+                                      <h5>
+                                           <a href="">1.HTML基础一[JUFF]</a>
+                                      </h5>
+                                   <p>饥人谷前端交流群</p>
+                                   <span>25人购买</span>
+                                   </li>
+                                   
+                              </ul>
+                         </div>
+                     </div>
+               </div>
+
+</body>
+</html>
